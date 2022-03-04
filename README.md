@@ -5,6 +5,7 @@
 - Express
 - Passport
 - Passport Google OAuth2
+- Passport Twitter
 
 ## Previous steps
 
@@ -34,3 +35,19 @@ npm run dev
 
 4. Get your GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET
 5. Copy this client ID and client secret into your .env file.
+
+## How to get Twitter credentials:
+
+1. Login to Twitter Developers and go to https://developer.twitter.com/en/portal/dashboard
+2. Create a new Project or use an existing project.
+3. Raise the project access level to "Elevated"
+4. Create an application in the project.
+5. In app section, "Settings" tab:
+
+- Enable "OAuth 2.0"
+- Select Type of App > Web App
+- Callback URI / Redirect URL > For example, "http://localhost:3000/auth/twitter/callback"
+- Website URL > Your Website URL
+
+6. In app section, "Keys and tokends" tab, get your client key and client secret.
+7. Copy this client key and client secret into your .env file.

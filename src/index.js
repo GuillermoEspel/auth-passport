@@ -8,7 +8,8 @@ const morgan = require("morgan");
 
 const session = require("express-session");
 const passport = require("passport");
-require("./auth");
+require("./utils/authGoogle");
+require("./utils/authTwitter");
 
 // Settings
 app.set("port", process.env.PORT || 3000);
@@ -34,6 +35,7 @@ app.use(passport.session());
 app.use("/", require("./routes/index"));
 app.use("/", require("./routes/auth"));
 app.use("/auth/google", require("./routes/authGoogle"));
+app.use("/auth/twitter", require("./routes/authTwitter"));
 
 // Initialization
 app.listen(app.get("port"), () => {
