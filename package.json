@@ -1,0 +1,26 @@
+{
+  "name": "auth-passport",
+  "author": "Guillermo Espel",
+  "description": "Authentication with passport (NodeJS)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.0",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-google-oauth2": "^0.2.0"
+  }
+}
